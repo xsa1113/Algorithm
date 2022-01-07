@@ -44,6 +44,7 @@ public class test1 {
             int w = sc.nextInt();
             arr.add(new Body(h,w));
         }
+        //오케이
 
         System.out.println(T.solution(n, arr));
 
