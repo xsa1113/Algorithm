@@ -6,6 +6,15 @@ import java.util.Scanner;
 public class 최대수입스케줄PQ9 {
     // 먼저 정렬을 한다
     // 날짜는 N일 안에 하면 되는 거임
+//    6
+//50 2
+//20 1
+//40 2
+//60 3
+//30 3
+//30 1
+    // 시간순으로 정렬을 하고
+    // 날짜는 2일이면 2일안에 최고로 얻을 수 있는걸 찾는다
     static class Node implements Comparable<Node>{
         public int money;
         public int time;
