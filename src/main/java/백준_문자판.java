@@ -8,7 +8,7 @@ public class 백준_문자판 {
     static int dr [] = {1,0,-1,0};
     static int dc [] = {0,-1,0,1};
     static char[] check;
-
+//test
 
     private static int dfs(int i, int j, int index){
         if(index == check.length-1) return dp[i][j][index] = 1; //1은종료
