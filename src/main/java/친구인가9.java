@@ -13,6 +13,7 @@ public class 친구인가9 {
         int fa = Find(a);
         int fb = Find(b);
         if(fa != fb) unf[fa] = fb;
+        //유니온파인드
 
     }
     public static void main(String[] args) {
