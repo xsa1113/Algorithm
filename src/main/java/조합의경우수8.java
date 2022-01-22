@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class 조합의경우수8 {
     static int n,m;
     static int answer = 0;
+    //오케
     //메모이제이션
     int[][] dy = new int[35][35];
     public int DFS(int n, int r){
