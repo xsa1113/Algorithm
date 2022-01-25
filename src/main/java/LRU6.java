@@ -13,7 +13,7 @@ public class LRU6 {
                     pos = i;
                 }
             }
-                // miss 상황, 옆으로 땡겨주기
+                // miss 상ㅇ황, 옆으로 땡겨주기
                 if(pos == -1){
                     for(int i = s-1; i>=1; i--){
                         cache[i] = cache[i-1];
