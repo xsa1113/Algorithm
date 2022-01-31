@@ -13,7 +13,7 @@ public class 문자열압축 {
                     // cnt 스트링
                     // Integer.toString()
                     answer += String.valueOf(cnt);
-                    //1로 초기화해서 다시 하기
+                    //1로 초기화해서 다시 하..
                     cnt = 1;
                 }
             }
