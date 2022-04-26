@@ -1,4 +1,4 @@
-package 자료구조;
+package 트리;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -13,11 +13,11 @@ public class 트리의부모찾기 {
 		int N =sc.nextInt();
 		int parent [] = new int[N+1];
 		
-		for(int i=0; i<N+1; i++) {
+		for(int i=0; i<=N+1; i++) {
 			list.add(new ArrayList<Integer>()); 
 		}
 		
-		for(int i=0; i<N; i++) {
+		for(int i=1; i<N; i++) {
 			int to = sc.nextInt();
 			int from = sc.nextInt();
 			list.get(to).add(from);
@@ -25,6 +25,8 @@ public class 트리의부모찾기 {
 		}
 		int start = 1;
 		bfs(start,list, parent, N);
+//		dfs();
+		printParents(parent);
 		
 	}
 
@@ -35,11 +37,21 @@ public class 트리의부모찾기 {
 		
 		while(!queue.isEmpty()) {
 			int parents = queue.poll();
-			
-			
-			
+
+			for(int item : list.get(parents)) {
+				if (parent[item] == 0) {
+					parent[item] = parents;
+					queue.offer(item);
+				}
+			}
 		}
 		
+	}
+
+	private static void printParents(int[] parents){
+		int i;
+		for(i = 2; i<parents.length; i++)
+			System.out.println(parents[i]);
 	}
 	
 }
