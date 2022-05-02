@@ -27,7 +27,6 @@ public class 운동_1956 {
         // e개의 도로
 
         result = 0;
-        check = new boolean[v+1];
         distance = new int[v+1][v+1];
 
         for(int i=1; i<=v; i++){
